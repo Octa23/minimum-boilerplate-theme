@@ -1,0 +1,23 @@
+{
+  "responsive-layout.mobile#mobile": {
+    "children": ["rich-text#mobile", "image#mobile"]
+  },
+
+  "rich-text#mobile": {
+    "props": {
+      "text": "# Your Coffee, Your Way \n ### New Coffee Makers Collection (I'm on mobile)",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "image#mobile": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/Responsive-Image-Mobile.jpg?q=1",
+      "link": {
+        "url": "/small-appliances/coffee-makers"
+      },
+      "alt": "Coffee Makers Collection"
+    }
+  }
+}

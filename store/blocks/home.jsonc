@@ -1,30 +1,36 @@
 {
   "store.home": {
-    "blocks": ["info-card#button-right", "info-card#button-left"]
+    "blocks": [
+      "flex-layout.row#home",
+      "slider-layout#home",
+      "responsive-layout.desktop#desktop",
+      "responsive-layout.mobile#mobile",
+      "tab-layout#home",
+      "modal-trigger#first",
+      "list-context.product-list",
+      "stack-layout#cta"
+    ]
   },
-  "info-card#button-right": {
+  "stack-layout#cta": {
+    "children": ["image#cta", "link#cta"]
+  },
+  "image#cta": {
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "right",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
-      "headline": "Vintage Pink",
-      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
-      "callToActionMode": "button",
-      "callToActionText": "Explore",
-      "callToActionUrl": "/sale/d",
-      "textAlignment": "center"
+      "blockClass": "cover",
+      "width": "100%",
+      "height": 400,
+      "src": "https://www.culturasonora.es/wp-content/uploads/2019/09/gibson-guitars-1-1024x768.jpg"
     }
   },
-  "info-card#button-left": {
+  "link#cta": {
     "props": {
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
-      "headline": "Shining chrome",
-      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
-      "callToActionMode": "link",
-      "callToActionText": "Go to collection",
-      "textAlignment": "center"
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "href": "http://www.gibson.com/",
+      "label": "Let’s go to rock!"
     }
   }
 }

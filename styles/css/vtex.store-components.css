@@ -1,0 +1,5 @@
+.imageElement--cover {
+  object-fit: cover;
+  object-position: top;
+}
+
